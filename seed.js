@@ -7,7 +7,7 @@ const posts = [
         id: 1,
         title: 'Post 1',
         body: 'Lorem ipsum dolor sit amet',
-        isPublished: false
+        isPublished: true
     },
     {
         id: 2,

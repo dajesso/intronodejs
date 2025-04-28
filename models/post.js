@@ -9,3 +9,4 @@ const Post = model('Post', {
 })
 
 export default Post
+

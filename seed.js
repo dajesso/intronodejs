@@ -3,6 +3,8 @@ import db from './db.js'
 import Category from './models/category.js'
 import Post from "./models/post.js"
 
+
+
 const categories = [
     { name: 'Food' },
     { name: 'Coding' },

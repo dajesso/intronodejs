@@ -1,7 +1,7 @@
 // import express from 'express' // Import the default export
 import { Router } from 'express' // Destructures Router from within the default export
 import Post from '../models/post.js'
-
+import Category from '../models/category.js'
 // Default visibility of all module contents is private
 
 // Flask: Blueprint
@@ -9,7 +9,7 @@ const router = Router()
 
 // Get all posts
 router.get('/posts', async (req, res) => {
-    res.send(await Post.find(req.query.draft ? {} : { isPublished: true }))
+    res.send(await Post.find(req.query.draft ? {} : { isPublished: true }).populate('category'))
 })
 
 // router.get('/posts/search', (req, res) => {})
